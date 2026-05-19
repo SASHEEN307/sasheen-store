@@ -1,0 +1,169 @@
+body{
+margin:0;
+font-family:Arial;
+background:#000;
+color:#d4af37;
+overflow-x:hidden;
+}
+
+/* خلفية الكريستال */
+body{
+margin:0;
+font-family:Arial;
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("./images/crystal-bg.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat;
+color:#d4af37;
+overflow-x:hidden;
+}
+
+
+/* الهيدر */
+
+header{
+padding:25px;
+text-align:center;
+font-size:38px;
+font-weight:bold;
+letter-spacing:4px;
+color:#d4af37;
+
+background:rgba(0,0,0,0.55);
+
+backdrop-filter:blur(8px);
+
+box-shadow:0 0 20px #d4af37;
+}
+
+/* الأقسام */
+
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* الأزرار */
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:12px;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:white;
+}
+
+/* المنتجات */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:30px;
+}
+
+.card{
+background:#111;
+border-radius:20px;
+padding:20px;
+box-shadow:0 0 20px rgba(212,175,55,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.card h2{
+margin-top:15px;
+}
+
+.price{
+font-size:22px;
+margin:10px 0;
+}
+
+/* السلة */
+
+.cart{
+position:fixed;
+top:20px;
+right:20px;
+background:#111;
+padding:20px;
+border-radius:15px;
+width:280px;
+box-shadow:0 0 20px #d4af37;
+z-index:999;
+}
+
+.cart h3{
+margin-top:0;
+}
+
+.cart-item{
+margin-bottom:10px;
+border-bottom:1px solid #333;
+padding-bottom:10px;
+}
+
+.remove-btn{
+background:red;
+color:white;
+border:none;
+padding:5px 10px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.checkout{
+display:none;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:14px;
+text-align:center;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* صفحة المنتج */
+
+.product-page{
+max-width:800px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+.product-page img{
+width:100%;
+max-width:500px;
+border-radius:20px;
+box-shadow:0 0 20px #d4af37;
+}
+
+.product-page h1{
+margin-top:20px;
+font-size:40px;
+}
